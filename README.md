@@ -62,7 +62,7 @@ Para ver os commits do projeto:
 git log --oneline
 ```
 
-Para ver uma alteração específica:
+Para ver uma alteração específica.:
 
 ```text
 git show CODIGO-DO-COMMIT
