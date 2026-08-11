@@ -149,3 +149,25 @@ def devolver_livro(livros):
 
     return True
 
+# Lista todos os livros
+
+def listar_livros(livros):
+    print("\n--- LISTAR LIVROS ---")
+
+    if len(livros) == 0:
+        print("Nenhum livro cadastrado.")
+        return
+
+    for livro in livros:
+        print("------------------------------")
+        print("Título:", livro["titulo"])
+        print("Autor:", livro["autor"])
+        print("Ano:", livro["ano"])
+        print("ISBN:", livro["isbn"])
+        print("Status:", livro["status"])
+
+    print("------------------------------")
+
+
+livros = carregar_livros()
+listar_livros(livros)
