@@ -169,5 +169,4 @@ def listar_livros(livros):
     print("------------------------------")
 
 
-livros = carregar_livros()
-listar_livros(livros)
+
