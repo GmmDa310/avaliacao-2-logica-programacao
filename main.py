@@ -125,3 +125,27 @@ def emprestar_livro(livros):
 
     return True
 
+# Devolve um livro
+
+def devolver_livro(livros):
+    print("\n--- DEVOLVER LIVRO ---")
+
+    isbn = pedir_texto("ISBN do livro: ")
+
+    livro = buscar_por_isbn(livros, isbn)
+
+    if livro is None:
+        print("Livro não encontrado.")
+        return False
+
+    if livro["status"] == "Disponível":
+        print("Este livro já está disponível.")
+        return False
+
+    livro["status"] = "Disponível"
+    salvar_livros(livros)
+
+    print("Livro devolvido com sucesso.")
+
+    return True
+
