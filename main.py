@@ -96,7 +96,32 @@ def cadastrar_livro(livros):
     }
 
     livros.append(novo_livro)
+    salvar_livros(livros)
 
     print("Livro cadastrado com sucesso.")
 
     return True
+# Empresta um livro
+
+def emprestar_livro(livros):
+    print("\n--- EMPRESTAR LIVRO ---")
+
+    isbn = pedir_texto("ISBN do livro: ")
+
+    livro = buscar_por_isbn(livros, isbn)
+
+    if livro is None:
+        print("Livro não encontrado.")
+        return False
+
+    if livro["status"] == "Emprestado":
+        print("Este livro já está emprestado.")
+        return False
+
+    livro["status"] = "Emprestado"
+    salvar_livros(livros)
+
+    print("Livro emprestado com sucesso.")
+
+    return True
+
