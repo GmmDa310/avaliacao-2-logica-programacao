@@ -21,10 +21,10 @@ Os dados ficam salvos no arquivo `livros.csv`, então não são perdidos quando 
 ## Estrutura do código
 
 ```text
-biblioteca/
-├── main.py
-├── livros.csv
-└── README.md
+livros.csv
+main.py
+README.md
+
 ```
 
 ## O que eu usei
