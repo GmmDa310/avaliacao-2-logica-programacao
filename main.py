@@ -167,6 +167,3 @@ def listar_livros(livros):
         print("Status:", livro["status"])
 
     print("------------------------------")
-
-
-
