@@ -34,9 +34,9 @@ README.md
 * Funções
 * Listas e dicionários
 * Arquivo CSV
-* `sorted()` para ordenação
+* `sorted()` para ordenar
 
-O programa usa apenas a biblioteca `csv`, que já vem com o Python.
+O código usa só a biblioteca `csv`, que já vem com o Python.
 
 ## Histórico do desenvolvimento
 
@@ -56,7 +56,7 @@ O código foi feito em etapas, usando commits para registrar as mudanças.
 
 ## Git
 
-Para ver os commits do projeto:
+Para ver os commits do código:
 
 ```text
 git log --oneline
