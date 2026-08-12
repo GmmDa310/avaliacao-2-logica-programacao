@@ -1,6 +1,10 @@
 import csv
 
-NOME_ARQUIVO = "livros.csv"
+import os
+
+NOME_ARQUIVO = os.path.join(os.path.dirname(__file__), "livros.csv")
+
+print("CSV:", os.path.abspath(NOME_ARQUIVO))
 
 
 # Carrega os livros salvos no arquivo CSV
